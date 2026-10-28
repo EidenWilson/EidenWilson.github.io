@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Eiden Wilson Neralaily | Data science student, Munich</title>
+<meta name="description" content="Data science student at ISM Munich who builds data products end to end: pipelines, models and the web apps people use them in. Open to working student roles.">
+<link rel="canonical" href="https://eidenwilson.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Eiden Wilson Neralaily | Data science student, Munich">
+<meta property="og:description" content="I build data products end to end, from the pipeline to the page. Open to working student roles in data and analytics in Munich.">
+<meta property="og:url" content="https://eidenwilson.github.io/">
+<meta property="og:image" content="https://eidenwilson.github.io/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/sofia-sans-semi-condensed-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Eiden Wilson Neralaily","url":"https://eidenwilson.github.io/","jobTitle":"Student, Applied Data Science and Business Analytics","affiliation":{"@type":"CollegeOrUniversity","name":"International School of Management (ISM), Munich"},"address":{"@type":"PostalAddress","addressLocality":"Munich","addressCountry":"DE"},"sameAs":["https://github.com/EidenWilson"],"knowsAbout":["Data science","Machine learning","Data pipelines","Business intelligence","Python","SQL","Power BI"],"knowsLanguage":["en","de"]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="wrap">
+  <a class="name" href="#main">Eiden Wilson Neralaily<span>.</span></a>
+  <nav aria-label="Sections">
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div></header>
+
+<main id="main">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Data science student in Munich</p>
+      <h1>I build data products from the pipeline to the page.</h1>
+      <p class="lead">I study Applied Data Science and Business Analytics at ISM Munich. I like problems where the data is messy and the answer has to be clear enough for a business owner to act on.</p>
+      <div class="actions"><a class="btn" href="mailto:eidenwilson123@gmail.com">Email me</a><a href="#work">See my work</a></div>
+    </div>
+    <table class="facts">
+      <caption class="sr">At a glance</caption>
+      <tbody>
+        <tr><th scope="row">Studying</th><td>B.Sc. Applied Data Science and Business Analytics, ISM Munich, since 2025</td></tr>
+        <tr><th scope="row">Building</th><td>Macro Risk Monitor, a student startup</td></tr>
+        <tr><th scope="row">Looking for</th><td>A working student role in data or analytics, Munich</td></tr>
+        <tr><th scope="row">Languages</th><td>English, German (B1)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="sec" id="work" aria-labelledby="h-work">
+  <div class="wrap">
+    <div class="head"><h2 id="h-work">Selected work</h2><p>One product in depth, then the projects that taught me the parts of it.</p></div>
+    <article class="lead-work" aria-labelledby="h-mrm">
+      <figure class="shot">
+        <picture>
+          <source type="image/webp" srcset="assets/img/macro-risk-monitor-960.webp 960w, assets/img/macro-risk-monitor.webp 1440w" sizes="(max-width: 900px) 100vw, 640px">
+          <img src="assets/img/macro-risk-monitor.webp" width="1440" height="860" alt="Macro Risk Monitor for an example restaurant: in a bad year the economy could take €44,300 of its €72,000 profit, written out as a statement next to the headline">
+        </picture>
+        <figcaption>The live tool, for an example restaurant in Munich.</figcaption>
+      </figure>
+      <div>
+        <h3 id="h-mrm">Macro Risk Monitor</h3>
+        <p class="what">Shows a small German business how much of next year's profit the economy could take, and which protection is worth paying for. Built as a two-person startup with Channappa, who leads the finance side.</p>
+        <ul>
+          <li>A pipeline of 21 series from the ECB, Eurostat and FRED, refreshed twice a month by GitHub Actions.</li>
+          <li>Filtered historical simulation by economic regime, a hidden Markov model as a second opinion, and a backtest since 2008 that passes the Kupiec test.</li>
+          <li>An AI assistant on Cloudflare Workers AI that never computes numbers itself: it calls the page's own model as tools, and client names never leave the browser.</li>
+          <li>A portfolio stress test for banks and funds, 13 languages, and a page for tax advisors.</li>
+        </ul>
+        <p class="stack"><b>Stack:</b> Python (pandas, NumPy, SciPy, hmmlearn), SQLite, JavaScript, Cloudflare Workers, GitHub Actions, Playwright</p>
+        <p class="links"><a href="https://eidenwilson.github.io/macro-risk-monitor/">Open the tool</a><a href="https://github.com/EidenWilson/macro-risk-monitor">Read the code</a><a href="https://eidenwilson.github.io/macro-risk-monitor/portfolio/">Portfolio stress test</a></p>
+      </div>
+    </article>
+    <div class="figs" aria-label="Macro Risk Monitor in numbers">
+      <div><b>21</b><span>data series, each shifted by its publication lag</span></div>
+      <div><b>13</b><span>languages, Arabic right to left</span></div>
+      <div><b>200+</b><span>browser checks on every push</span></div>
+      <div><b>€0</b><span>to run, on free tiers only</span></div>
+    </div>
+    <ul class="rows">
+      <li>
+        <h3>Customer churn prediction and retention dashboard</h3>
+        <div><p>Flags telecom customers who are likely to cancel, and lets a retention team test discount offers in a live dashboard with a return-on-investment calculator. A random forest trained with SMOTE reaches an AUC-ROC of 0.83 and catches 68% of the customers who leave. SHAP shows what drives it: month-to-month contracts, short tenure and no online security.</p>
+        <p class="stack"><b>Stack:</b> Python, scikit-learn, SMOTE, SHAP, Streamlit, Power BI</p>
+        <p class="links"><a href="https://customer-churn-prediction-telco-xfxatqmebefxlntqlwvkkf.streamlit.app/">Open the app</a><a href="https://github.com/EidenWilson/customer-churn-prediction-telco">Read the code</a></p></div>
+      </li>
+      <li>
+        <h3>Property rental platform</h3>
+        <div><p>Owners list and manage properties; renters search by city and book by date, with the total price worked out from the dates. Hashed passwords, renter and owner roles behind route guards, an owner dashboard with total revenue from SQL, and a pytest suite.</p>
+        <p class="stack"><b>Stack:</b> Python, Flask, SQLAlchemy, SQLite, Jinja, pytest</p>
+        <p class="links"><a href="https://github.com/EidenWilson/Rental-house-system">Read the code</a></p></div>
+      </li>
+      <li>
+        <h3>Food sustainability app<span class="meta">TUM CONVIVIUM hackathon, team of three</span></h3>
+        <div><p>A Streamlit app on food waste and supply chains with three views. Uploaded CSV files merge automatically, so teams can bring their own data.</p>
+        <p class="stack"><b>Stack:</b> Python, pandas, Streamlit</p></div>
+      </li>
+      <li>
+        <h3>German learning app</h3>
+        <div><p>A web app for learning German: flashcards, fill in the blank, listen and type, and a sentence scramble. Built to cost nothing to run.</p>
+        <p class="stack"><b>Stack:</b> HTML, CSS, JavaScript</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec tint" id="experience" aria-labelledby="h-exp">
+  <div class="wrap">
+    <div class="head"><h2 id="h-exp">Experience and education</h2><p>Work that taught me how operations run, and the degree that gives me the tools.</p></div>
+    <ul class="rows">
+      <li><h3>Warehouse team assistant<span class="meta">ILA Solution GmbH, at Zara, Munich</span></h3><div><p>Logistics, time recording and coordinating the team on shift.</p></div></li>
+      <li><h3>Intern<span class="meta">Bikal Technologies</span></h3><div></div></li>
+      <li><h3>B.Sc. Applied Data Science and Business Analytics<span class="meta">International School of Management (ISM), Munich, since 2025</span></h3><div><p>The data science core, alongside courses such as management accounting, and investment and financing.</p></div></li>
+      <li><h3>School<span class="meta">Indian High School, Dubai</span></h3><div><p>NASA Space Camp Innovation Award. F1 in Schools: fourth place worldwide with team Velocità.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="skills" aria-labelledby="h-skills">
+  <div class="wrap">
+    <div class="head"><h2 id="h-skills">Skills</h2><p>What I reach for, grouped by the job it does.</p></div>
+    <dl class="skills">
+      <div><dt>Analysis and modelling</dt><dd>Python (pandas, NumPy, scikit-learn, XGBoost, SHAP), R, classification with imbalanced classes, backtesting</dd></div>
+      <div><dt>Data and pipelines</dt><dd>SQL, SQLite, APIs (ECB, Eurostat, FRED), scheduled jobs with GitHub Actions</dd></div>
+      <div><dt>Business intelligence</dt><dd>Power BI, Tableau, Streamlit dashboards</dd></div>
+      <div><dt>Web apps</dt><dd>Flask, SQLAlchemy, JavaScript, HTML and CSS, accessibility, tests with pytest and Playwright</dd></div>
+      <div><dt>AI tools</dt><dd>LLMs that call tools, Cloudflare Workers AI, LangChain and AutoGen</dd></div>
+      <div><dt>Languages</dt><dd>English, German (B1)</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="sec contact" id="contact" aria-labelledby="h-contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><h2 id="h-contact">Contact</h2><p>Munich, open to working student roles in data and analytics.</p></div>
+    <p class="say">The fastest way to reach me is email.</p>
+    <div class="actions"><a class="btn" href="mailto:eidenwilson123@gmail.com">eidenwilson123@gmail.com</a><a href="https://github.com/EidenWilson">GitHub</a></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <p>Eiden Wilson Neralaily, Munich, 2026</p>
+  <p>Set in Sofia Sans Semi Condensed. No cookies, no tracking.</p>
+</div></footer>
+</body>
+</html>
