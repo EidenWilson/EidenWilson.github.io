@@ -36,8 +36,7 @@
 <section class="hero">
   <div class="wrap">
     <div>
-      <p class="kicker">Data science student in Munich</p>
-      <h1>I build data products from the pipeline to the page.</h1>
+      <h1>I build data products end to end.</h1>
       <p class="lead">I study Applied Data Science and Business Analytics at ISM Munich. I like problems where the data is messy and the answer has to be clear enough for a business owner to act on.</p>
       <div class="actions"><a class="btn" href="mailto:eidenwilson123@gmail.com">Email me</a><a href="#work">See my work</a></div>
     </div>
@@ -84,14 +83,22 @@
       <div><b>€0</b><span>to run, on free tiers only</span></div>
     </div>
     <ul class="rows">
-      <li>
+      <li class="has-shot">
         <h3>Customer churn prediction and retention dashboard</h3>
+        <figure class="shot">
+          <img src="assets/img/churn-app.webp" width="1040" height="780" loading="lazy" decoding="async" alt="The churn app scoring one customer with a month-to-month contract, fibre internet and 12 months of tenure: high risk of churn at 83.4%, with the advice to offer a discount or a one-year contract">
+          <figcaption>The live app, scoring one customer.</figcaption>
+        </figure>
         <div><p>Flags telecom customers who are likely to cancel, and lets a retention team test discount offers in a live dashboard with a return-on-investment calculator. A random forest trained with SMOTE reaches an AUC-ROC of 0.83 and catches 68% of the customers who leave. SHAP shows what drives it: month-to-month contracts, short tenure and no online security.</p>
         <p class="stack"><b>Stack:</b> Python, scikit-learn, SMOTE, SHAP, Streamlit, Power BI</p>
         <p class="links"><a href="https://customer-churn-prediction-telco-xfxatqmebefxlntqlwvkkf.streamlit.app/">Open the app</a><a href="https://github.com/EidenWilson/customer-churn-prediction-telco">Read the code</a></p></div>
       </li>
-      <li>
+      <li class="has-shot">
         <h3>Property rental platform</h3>
+        <figure class="shot">
+          <img src="assets/img/rental-dashboard.webp" width="1040" height="780" loading="lazy" decoding="async" alt="Owner dashboard of the rental platform: total revenue earned of €3,972 and the revenue for each property, both computed in SQL">
+          <figcaption>The owner dashboard, run locally with the sample data.</figcaption>
+        </figure>
         <div><p>Owners list and manage properties; renters search by city and book by date, with the total price worked out from the dates. Hashed passwords, renter and owner roles behind route guards, an owner dashboard with total revenue from SQL, and a pytest suite.</p>
         <p class="stack"><b>Stack:</b> Python, Flask, SQLAlchemy, SQLite, Jinja, pytest</p>
         <p class="links"><a href="https://github.com/EidenWilson/Rental-house-system">Read the code</a></p></div>

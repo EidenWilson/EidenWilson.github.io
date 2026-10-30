@@ -39,7 +39,6 @@ p{margin:0}
 
 .hero{padding-block:var(--s8) var(--s7)}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.9fr);gap:var(--s7) var(--s8);align-items:end}
-.kicker{font-size:17px;color:var(--muted);margin-bottom:var(--s4)}
 h1{font-size:clamp(40px,5.6vw,68px);font-weight:650;letter-spacing:-.008em;max-width:16ch}
 .lead{font-size:clamp(19px,1.6vw,21px);line-height:1.5;max-width:56ch;margin-top:var(--s5)}
 
@@ -53,7 +52,7 @@ h1{font-size:clamp(40px,5.6vw,68px);font-weight:650;letter-spacing:-.008em;max-w
 .sec{padding-block:var(--s8)}
 .head{border-top:2px solid var(--ink);padding-top:var(--s4);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s4) var(--s7);align-items:end;margin-bottom:var(--s6)}
 .head h2{font-size:clamp(28px,3.2vw,38px);font-weight:650}
-.head p{color:var(--muted);max-width:52ch}
+.head p{max-width:52ch}
 .tint{background:var(--sunk)}
 
 /* the main project: the picture is the subject */
@@ -75,17 +74,21 @@ h1{font-size:clamp(40px,5.6vw,68px);font-weight:650;letter-spacing:-.008em;max-w
 
 /* everything else: one ruled list */
 .rows{list-style:none;margin:var(--s7) 0 0;padding:0;border-top:1px solid var(--ink)}
-.rows li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:var(--s3) var(--s7);padding:var(--s5) 0;border-bottom:1px solid var(--line)}
+.rows li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s3) var(--s7);padding:var(--s5) 0;border-bottom:1px solid var(--line)}
 .rows h3{font-size:21px;font-weight:700;line-height:1.25}
 .rows .meta{display:block;margin-top:4px;font-size:15px;color:var(--muted);font-weight:400}
 .rows p{max-width:62ch}
 .rows .stack{margin-top:var(--s2)}
 .tint .rows{margin-top:0}
+/* a project with a picture: title and picture on the left, the entry on the right */
+.rows li.has-shot{grid-template-rows:auto 1fr;align-items:start}
+.has-shot > h3,.has-shot > .shot{grid-column:1}
+.has-shot > div{grid-column:2;grid-row:1 / span 2}
 
 .skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 var(--s7);margin:0;border-top:1px solid var(--ink)}
 .skills div{padding:var(--s4) 0;border-bottom:1px solid var(--line)}
 .skills dt{font-weight:700}
-.skills dd{margin:4px 0 0;color:var(--muted)}
+.skills dd{margin:4px 0 0}
 
 .contact .say{font-size:clamp(22px,2.4vw,30px);font-weight:650;max-width:30ch;line-height:1.25}
 .foot{border-top:1px solid var(--ink);padding-block:var(--s6) var(--s7);font-size:15px;color:var(--muted)}
@@ -93,6 +96,8 @@ h1{font-size:clamp(40px,5.6vw,68px);font-weight:650;letter-spacing:-.008em;max-w
 
 @media (max-width:900px){
   .hero .wrap,.lead-work,.rows li,.head,.skills{grid-template-columns:minmax(0,1fr)}
+  .rows li.has-shot{grid-template-rows:none}
+  .rows li.has-shot > *{grid-column:1;grid-row:auto}
   .figs{grid-template-columns:repeat(2,minmax(0,1fr))}
   .figs div{border-inline-start:0;padding-inline:0;border-top:1px solid var(--line);padding-bottom:var(--s3)}
   .figs div:nth-child(-n+2){border-top:0}
@@ -100,6 +105,7 @@ h1{font-size:clamp(40px,5.6vw,68px);font-weight:650;letter-spacing:-.008em;max-w
 }
 @media (max-width:640px){
   body{font-size:17px}
+  h1{font-size:min(40px,10.2vw)}
   .bar nav{order:3;width:100%;gap:0 18px;font-size:15px}
   .sec{padding-block:var(--s7)}
   .hero{padding-top:var(--s7)}
