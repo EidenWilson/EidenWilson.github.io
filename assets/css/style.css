@@ -5,7 +5,8 @@
 @font-face{font-family:"Sofia Sans SC";font-style:normal;font-display:swap;font-weight:1 1000;src:url(../fonts/sofia-sans-semi-condensed-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 
 :root{
-  --bg:#ffffff; --sunk:#edf1ea; --ink:#1f2a3a; --ink-2:#36445c; --muted:#566170; --line:#cfd6dc; --field-line:#8e9aa6; --red:#b3261e;
+  /* six colours, the same as Macro Risk Monitor: paper, ink, grey for secondary text, hairlines, the form tint, red */
+  --bg:#ffffff; --ink:#1f2a3a; --muted:#566170; --line:#cfd6dc; --sunk:#edf1ea; --red:#b3261e;
   --f:"Sofia Sans SC",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
   --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:32px; --s7:48px; --s8:80px; --s9:120px;
   --max:1120px;
@@ -33,7 +34,7 @@ p{margin:0}
 .bar nav a:hover{color:var(--ink)}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 18px;border-radius:3px;border:1px solid var(--ink);background:var(--ink);color:#fff;font-size:17px;font-weight:600;text-decoration:none;white-space:nowrap}
-.btn:hover{background:var(--ink-2);border-color:var(--ink-2)}
+.btn:hover{opacity:.85}
 .actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;margin-top:var(--s6)}
 .actions a:not(.btn){font-weight:600}
 
