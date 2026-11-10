@@ -60,6 +60,7 @@ h1{font-size:clamp(40px,5.6vw,68px);font-weight:650;letter-spacing:-.008em;max-w
 .lead-work{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:var(--s6) var(--s7);align-items:start}
 .shot{margin:0}
 .shot img{border:1px solid var(--ink);background:#fff}
+.shot video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:var(--ink)}
 .shot figcaption{font-size:15px;color:var(--muted);margin-top:var(--s3)}
 .lead-work h3{font-size:30px;font-weight:700}
 .lead-work .what{margin-top:var(--s3);font-size:19px}

@@ -57,18 +57,17 @@
     <div class="head"><h2 id="h-work">Selected work</h2><p>One product in depth, then the projects that taught me the parts of it.</p></div>
     <article class="lead-work" aria-labelledby="h-mrm">
       <figure class="shot">
-        <picture>
-          <source type="image/webp" srcset="assets/img/macro-risk-monitor-960.webp 960w, assets/img/macro-risk-monitor.webp 1440w" sizes="(max-width: 900px) 100vw, 640px">
-          <img src="assets/img/macro-risk-monitor.webp" width="1440" height="860" alt="Macro Risk Monitor for an example restaurant: in a bad year the economy could take €44,300 of its €72,000 profit, written out as a statement next to the headline">
-        </picture>
-        <figcaption>The live tool, for an example restaurant in Munich.</figcaption>
+        <video controls muted playsinline preload="none" width="1920" height="1080" poster="/macro-risk-monitor/assets/video/demo-en.jpg" aria-label="A 60-second demo of the Macro Risk Monitor, silent, with English subtitles: the answer for an example restaurant, a DATEV import, past shocks, protection, the AI assistant and the client ranking for tax advisors">
+          <source src="/macro-risk-monitor/assets/video/demo-en.mp4" type="video/mp4">
+        </video>
+        <figcaption>A 60-second tour of the live tool, silent, with subtitles (<a href="/macro-risk-monitor/assets/video/demo-de.mp4">auf Deutsch</a>).</figcaption>
       </figure>
       <div>
         <h3 id="h-mrm">Macro Risk Monitor</h3>
         <p class="what">Shows a small German business how much of next year's profit the economy could take, and which protection is worth paying for. Built as a two-person startup with Channappa, who leads the finance side.</p>
         <ul>
-          <li>A pipeline of 21 series from the ECB, Eurostat and FRED, refreshed twice a month by GitHub Actions.</li>
-          <li>Filtered historical simulation by economic regime, a hidden Markov model as a second opinion, and a backtest since 2008 that passes the Kupiec test.</li>
+          <li>A pipeline of 21 series from the ECB, Eurostat and FRED, checked every day by GitHub Actions, with every value logged as first published and as revised.</li>
+          <li>Filtered historical simulation over every past year since 2000, with the economic regime and a hidden Markov model as second views, and a backtest since 2008 with a Kupiec test that allows for overlapping years.</li>
           <li>An AI assistant on Cloudflare Workers AI that never computes numbers itself: it calls the page's own model as tools, and client names never leave the browser.</li>
           <li>A portfolio stress test for banks and funds, 13 languages, and a page for tax advisors.</li>
         </ul>
